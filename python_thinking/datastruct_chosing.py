@@ -38,3 +38,4 @@ print(count_dict)
 print(count_sorted)
 for word in count_sorted:
     print('{} --{}times.'.format(word, count_dict[word]))
+

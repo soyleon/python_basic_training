@@ -18,9 +18,9 @@ random.sort(key=take_second)
 print('排序列表：', random)
 
 
-L = {'b': 1, 'a': 5, 'c': 3, 'd': 4}
+L = {'b': 1, 'a': 2, 'c': 3, 'd': 4}
 
-print(sorted(L, key=lambda x: L[x]))           # 利用key
+print(sorted(L, key=lambda x: L[x]))    # 利用key
 
 
 students = [('john', 'A', 15), ('jane', 'B', 12), ('dave', 'B', 10)]

@@ -1,0 +1,25 @@
+import random
+
+
+def histogram(s):
+    d = dict()
+    for c in s:
+        if c not in d:
+            d[c] = 1
+        else:
+            d[c] += 1
+    return d
+
+
+def choose_from_hist(hist):
+    t = []
+    for word, freq in hist.items():
+        t.extend([word] * freq)
+    return random.choice(t)
+
+
+if __name__ == "__main__":
+    hist = histogram("sadfafdfadfasf")
+    print(hist)
+    letter_random = choose_from_hist(hist)
+    print(letter_random)
